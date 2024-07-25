@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Article Processor</title>
+  <title>Article Enricher</title>
   <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
   <h1>Process Article</h1>
-  <button id="processBtn">Save current article</button>
+  <form id="categoryForm">
+    <input type="checkbox" id="personal" name="category" value="personal">
+    <label for="personal">Personal</label>
+    
+    <input type="checkbox" id="research" name="category" value="research">
+    <label for="research">Research</label>
+    
+    <input type="checkbox" id="shopping" name="category" value="shopping">
+    <label for="shopping">Shopping</label>
+  </form>
+  <button id="processBtn">Process Current Page</button>
+  <div class="message" id="message"></div>
   <script src="popup.js"></script>
 </body>
 </html>

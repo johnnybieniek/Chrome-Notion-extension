@@ -41,6 +41,42 @@ button:active {
   transform: translateY(2px);
 }
 
+/* Category styles */
+#categoryForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#categoryForm label {
+  flex: 1;
+  margin: 5px;
+  background-color: #555; /* Dark grey background */
+  color: white;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#categoryForm input[type="checkbox"] {
+  display: none;
+}
+
+#categoryForm input[type="checkbox"]:checked + label {
+  background-color: #FFD700; /* Yellow background when selected */
+  color: black; /* Change text color to black when selected */
+}
+
+.message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* Other existing styles */
 .container {
   width: 280px;
