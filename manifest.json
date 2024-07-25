@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Article Enricher",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/img16.png",
+      "48": "assets/img48.png",
+      "128": "assets/img128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
